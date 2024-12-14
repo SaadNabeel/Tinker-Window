@@ -19,10 +19,22 @@ def msg():
     l3 = Label(root, text=m1)
     l3.pack()
 
+    radio = IntVar()
+
+    l4 = Label(root, text="Select your gender: ")
+    l4.pack()
+
+    r1 = Radiobutton(root, text="Male", variable=radio, value=1)
+    r1.pack()
+
+    r2 = Radiobutton(root, text="Female", variable=radio, value=2)
+    r2.pack()
+
 b1 = Button(root, text="Submit", bg="red", fg="white", command=msg)
 b1.pack()
 
 root.mainloop()
+
 
 
 
