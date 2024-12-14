@@ -13,10 +13,16 @@ l2.pack()
 
 e1 = Entry(root)
 e1.pack()
+def msg():
+    a1 = e1.get()
+    m1 = "Hey " + a1 + "\n Welcome to my window"
+    l3 = Label(root, text=m1)
+    l3.pack()
 
-b1 = Button(root, text="Submit", bg="red", fg="white")
+b1 = Button(root, text="Submit", bg="red", fg="white", command=msg)
 b1.pack()
 
 root.mainloop()
+
 
 
